@@ -5,6 +5,8 @@
       <th scope="col">Names</th>
       <th scope="col">Prices</th>
       <th scope="col">Quantities</th>
+      <th scope="col">Edit</th>
+
     </tr>
   </thead>
   <tbody class="table-group-divider">
@@ -13,6 +15,7 @@
       <th>{{item.name}}</th>
       <th>{{item.price}}</th>
       <th>{{item.quantity}}</th>
+      <th><a routerLink="/Admin/Edit/{{item.id}}">Edit</a> </th>
     </tr>
   </tbody>
 </table>

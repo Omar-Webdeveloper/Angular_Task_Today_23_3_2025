@@ -1,15 +1,15 @@
 <form #new="ngForm" (ngSubmit)="AddNewVoucher(new.value)">
   <div class="form-floating">
-    <input type="text" class="form-control"  placeholder="Password" name="name" ngmodel>
+    <input type="text" class="form-control"  placeholder="Password" name="name" ngModel>
     <label >name</label>
   </div>
   <div class="form-floating mb-3">
-    <input type="number" class="form-control"  name="price" ngmodel>
+    <input type="number" class="form-control"  name="price" ngModel>
     <label >price</label>
   </div>
   <div class="form-floating">
-    <input type="number" class="form-control"  name="quantity" ngmodel>
+    <input type="number" class="form-control"  name="quantity" ngModel>
     <label >Quantity</label>
   </div>
-  <button type="submit">Add New Voucher</button>
+  <button type="submit">Add</button>
 </form>
