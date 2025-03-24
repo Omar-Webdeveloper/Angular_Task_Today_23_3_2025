@@ -1,1 +1,16 @@
-<p>edit-voucher works!</p>
+<form #Modfiy="ngForm" (ngSubmit)="Edit_Voucher(Modfiy.value)" *ngIf="Voucher_Containter">
+  <div class="form-floating">
+    <input type="text" class="form-control" name="name" ngModel [(ngModel)]="Voucher_Containter.name">
+    <label>name</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="number" class="form-control" name="price" ngModel [(ngModel)]="Voucher_Containter.price">
+    <label>price</label>
+  </div>
+  <div class="form-floating">
+    <input type="number" class="form-control" name="quantity" ngModel [(ngModel)]="Voucher_Containter.quantity">
+    <label>Quantity</label>
+  </div>
+  <button type="submit">Add</button>
+</form>
+<p *ngIf="!Voucher_Containter">Loading...</p>
